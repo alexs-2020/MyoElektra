@@ -9,7 +9,6 @@ gantt
     axisFormat  %b %d
     tickInterval 1week
     weekday     monday
-    topAxis     true
     excludes    weekends
     todayMarker stroke-width:3px,stroke:#f5c518,opacity:0.9
 
