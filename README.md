@@ -44,7 +44,7 @@ gantt
 ```
 
 
-mermaid
+'''mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#1b2838','primaryBorderColor':'#2f4b66','primaryTextColor':'#e2eaf3','fontFamily':'Inter, Segoe UI, Helvetica, sans-serif','fontSize':'13px','taskTextColor':'#0b1220','taskTextOutsideColor':'#e2eaf3','sectionBkgColor':'#22384f','altSectionBkgColor':'#18293c','sectionBorderColor':'#3d6288','gridColor':'#2c4258','todayLineColor':'#f5c518','doneTaskBkgColor':'#2f6f4f','doneTaskBorderColor':'#57c98a','activeTaskBkgColor':'#1d4ed8','activeTaskBorderColor':'#7fb2ff','critBkgColor':'#8b2635','critBorderColor':'#f87171','milestoneColor':'#f59e0b'}}}%%
 gantt
     title MyoElektra · EMG-to-HID Controller — Fall 2026 Semester Plan
@@ -98,3 +98,4 @@ gantt
     Mentor sync                            :         c8, 2026-11-16, 1d
     Thanksgiving break                     :         c9, 2026-11-23, 5d
     Mentor sync · dry-run demo             :crit,     c10, 2026-11-30, 1d
+    '''
