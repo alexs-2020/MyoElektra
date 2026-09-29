@@ -9,42 +9,6 @@ I have completely sanitized the code block—stripping out all reserved characte
 Copy and paste this code block directly into your GitHub `README.md`:
 
 ```mermaid
-gantt
-    title Fall Semester Gantt - MyoElektra
-    dateFormat  YYYY-MM-DD
-    axisFormat  %m/%d
-
-    section Phase 0 Literature and Research
-    Expanded Lit Review and Gap Analysis        :done, p0_lit, 2026-09-10, 2026-09-24
-
-    section Phase 1 Controller Setup
-    Procure Teensy 41 and Setup Dev Env        :active, p1_proc, 2026-09-25, 2026-10-02
-    USB HID Gamepad Firmware Configuration     :p1_hid, after p1_proc, 5d
-    Verify Gamepad Enumeration and Manual Test  :p1_ver, after p1_hid, 4d
-
-    section Phase 2 Simple EMG Proof of Concept
-    Finalize Sensor Choice MyoWare vs Olimex   :active, p2_sens, 2026-09-25, 2026-10-02
-    Hardware Wiring and Safety Check           :p2_wire, after p2_sens, 4d
-    Implement Threshold Flex to Trigger Logic  :p2_flex, after p2_wire, 5d
-    Test Muscle Flex to In Game Action         :p2_test, after p2_flex, 4d
-
-    section Phase 3 EMG Signal Source
-    Acquire Dataset or Consult Department      :p3_data, after p2_test, 5d
-    Build Synthetic EMG Signal Generator      :p3_gen, after p3_data, 7d
-
-    section Phase 4 Processing and Mapping Pipeline
-    Filter Rectify and RMS Feature Extraction  :p4_filt, after p3_gen, 9d
-    Gesture Classification Logic              :p4_clas, after p4_filt, 8d
-    Map Features to HID Output                 :p4_map, after p4_clas, 7d
-    Integrate Full Pipeline End to End         :p4_integ, after p4_map, 6d
-
-    section Phase 5 Controls Validation and Buffer
-    Gesture to Input Reliability Testing       :p5_rel, after p4_integ, 5d
-    Latency Responsiveness and Noise Testing   :p5_lat, after p5_rel, 4d
-```
-
-
-'''mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#1b2838','primaryBorderColor':'#2f4b66','primaryTextColor':'#e2eaf3','fontFamily':'Inter, Segoe UI, Helvetica, sans-serif','fontSize':'13px','taskTextColor':'#0b1220','taskTextOutsideColor':'#e2eaf3','sectionBkgColor':'#22384f','altSectionBkgColor':'#18293c','sectionBorderColor':'#3d6288','gridColor':'#2c4258','todayLineColor':'#f5c518','doneTaskBkgColor':'#2f6f4f','doneTaskBorderColor':'#57c98a','activeTaskBkgColor':'#1d4ed8','activeTaskBorderColor':'#7fb2ff','critBkgColor':'#8b2635','critBorderColor':'#f87171','milestoneColor':'#f59e0b'}}}%%
 gantt
     title MyoElektra · EMG-to-HID Controller — Fall 2026 Semester Plan
@@ -98,4 +62,9 @@ gantt
     Mentor sync                            :         c8, 2026-11-16, 1d
     Thanksgiving break                     :         c9, 2026-11-23, 5d
     Mentor sync · dry-run demo             :crit,     c10, 2026-11-30, 1d
+```
+
+
+'''mermaid
+
     '''
